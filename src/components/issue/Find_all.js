@@ -19,7 +19,7 @@ function Issue_Find_all() {
 
     const fetchSessionData = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/account/getsessiondata`, {
+        const response = await fetch(`http://localhost:9093//account/getsessiondata`, {
           method: 'GET',
           credentials: 'include'
         });
